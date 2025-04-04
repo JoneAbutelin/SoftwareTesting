@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Successful login with valid credentials",
+        "description": "",
+        "id": "facebook-login-functionality;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6007814200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Facebook login page",
+            "match": {
+              "location": "Challenge.user_is_on_the_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270900300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"testuser@gmail.com\" and \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testuser@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"password123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "Challenge.user_enters_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132283600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks on the login button",
+            "match": {
+              "location": "Challenge.clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be redirected to the homepage",
+            "match": {
+              "location": "Challenge.user_should_be_redirected_to_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Fb"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Login Functionality",
+    "description": "",
+    "id": "facebook-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Fb.feature",
+    "tags": []
+  }
+]
